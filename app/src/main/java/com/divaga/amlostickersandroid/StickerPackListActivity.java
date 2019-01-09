@@ -6,13 +6,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package com.divaga.amlostickersandroid;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -29,6 +30,31 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
     private ArrayList<StickerPack> stickerPackList;
 
+   // public InterstitialAd mInterstitialAd;
+   // private AdView mAdView;
+   // int mostrar = 0;
+
+    private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> {
+
+
+      /*
+        Log.i("STICKERS_PB", "CLICK");
+
+        if(mostrar == 1){
+            addStickerPackToWhatsApp(pack.identifier, pack.name);
+            mostrar = 0;
+        }else {
+            mostrar = 1;
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                addStickerPackToWhatsApp(pack.identifier, pack.name);
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
+        }*/
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +62,83 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         packRecyclerView = findViewById(R.id.sticker_pack_list);
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
+
+/*
+        MobileAds.initialize(this, getResources().getString(R.string.admob_relase));
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(getResources().getString(R.string.interstitial_relase));
+
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading
+
+
+                Log.i("STICKERS", "LOADED");
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                // Code to be executed when an ad request fails.
+                Log.i("STICKERS_PB", String.valueOf(errorCode));
+                mostrar = 1;
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when the ad is displayed.
+                Log.i("STICKERS_PB", "OPENED");
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                // Code to be executed when the user has left the app.
+                Log.i("STICKERS_PB", "LEFT APP");
+            }
+
+            @Override
+            public void onAdClosed() {
+                Log.i("STICKERS_PB", "CLOSED");
+
+
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+                mostrar = 0;
+
+                // Code to be executed when when the interstitial ad is closed.
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        */
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        showAd();
+    }
+
+
+    public void showAd(){
+/*
+        if(mInterstitialAd != null){
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+            }
+        }
+*/
+
+    }
+
 
     @Override
     protected void onResume() {
@@ -68,9 +170,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     }
 
 
-    private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> {
-        addStickerPackToWhatsApp(pack.identifier, pack.name);
-    };
+
 
     private void recalculateColumnCount() {
         final int previewSize = getResources().getDimensionPixelSize(R.dimen.sticker_pack_list_item_preview_image_size);

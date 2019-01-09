@@ -40,4 +40,17 @@
     <string name="add_pack_fail_prompt_update_play_link">Update</string>
     <!-- Toast text when we could not take user to play store because they don't have Google Play app installed -->
     <string name="cannot_find_play_store">Google Play is not installed on the device.</string>
+
+
+    <string name="admob_prueba">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_prueba">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_prueba">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="admob_pay">ca-app-pub-2838435702981940~6030431043</string>
+    <string name="banner_pay">ca-app-pub-2838435702981940/1452815801</string>
+    <string name="interstitial_pay">ca-app-pub-2838435702981940/3643940850</string>
+
+    <string name="admob_relase">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_relase">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_relase">ca-app-pub-3940256099942544/1033173712</string>
 </resources>
