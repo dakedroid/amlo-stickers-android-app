@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2838435702981940~9980338166"/>
         <activity android:name="com.divaga.amlostickersandroid.EntryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

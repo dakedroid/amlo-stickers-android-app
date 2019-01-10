@@ -75,12 +75,36 @@
         {
           "image_file": "amlo_2_7.webp",
           "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_8.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_9.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_10.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_11.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_12.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_2_13.webp",
+          "emojis": ["💔","👎"]
         }
       ]
     },
     {
       "identifier": "3",
-      "name": "Feliz",
+      "name": "Amlo Feliz",
       "publisher": "Divaga",
       "tray_image_file": "tray_amlo_3.png",
       "publisher_email":"",
@@ -115,12 +139,76 @@
         {
           "image_file": "amlo_3_7.webp",
           "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_8.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_9.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_10.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_11.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_12.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_13.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_14.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_15.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_16.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_17.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_18.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_19.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_20.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_21.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_22.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_3_23.webp",
+          "emojis": ["💔","👎"]
         }
       ]
     },
     {
       "identifier": "4",
-      "name": "Enojado",
+      "name": "Amlo Enojado",
       "publisher": "Divaga",
       "tray_image_file": "tray_amlo_4.png",
       "publisher_email":"",
@@ -155,12 +243,84 @@
         {
           "image_file": "amlo_4_7.webp",
           "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_8.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_9.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_10.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_11.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_12.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_13.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_14.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_15.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_16.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_17.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_18.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_19.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_20.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_21.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_22.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_23.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_24.webp",
+          "emojis": ["💔","👎"]
+        },
+        {
+          "image_file": "amlo_4_25.webp",
+          "emojis": ["💔","👎"]
         }
       ]
     },
     {
       "identifier": "5",
-      "name": "Triste",
+      "name": "Amlo Sad",
       "publisher": "Divaga",
       "tray_image_file": "tray_amlo_5.png",
       "publisher_email":"",
@@ -186,6 +346,34 @@
         },
         {
           "image_file": "amlo_5_5.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_6.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_7.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_8.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_9.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_10.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_11.webp",
+          "emojis": ["😭","💧"]
+        },
+        {
+          "image_file": "amlo_5_12.webp",
           "emojis": ["😭","💧"]
         }
       ]
@@ -242,6 +430,14 @@
         },
         {
           "image_file": "amlo_6_11.webp",
+          "emojis": ["😱","😵"]
+        },
+        {
+          "image_file": "amlo_6_12.webp",
+          "emojis": ["😱","😵"]
+        },
+        {
+          "image_file": "amlo_6_13.webp",
           "emojis": ["😱","😵"]
         }
       ]

@@ -15,6 +15,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,16 +36,12 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
     private ArrayList<StickerPack> stickerPackList;
 
-   // public InterstitialAd mInterstitialAd;
-   // private AdView mAdView;
-   // int mostrar = 0;
+    public InterstitialAd mInterstitialAd;
+    private AdView mAdView;
+    int mostrar = 0;
 
     private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> {
-
-
-      /*
         Log.i("STICKERS_PB", "CLICK");
-
         if(mostrar == 1){
             addStickerPackToWhatsApp(pack.identifier, pack.name);
             mostrar = 0;
@@ -51,8 +53,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 addStickerPackToWhatsApp(pack.identifier, pack.name);
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
-        }*/
-
+        }
     };
 
     @Override
@@ -63,7 +64,6 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
 
-/*
         MobileAds.initialize(this, getResources().getString(R.string.admob_relase));
 
         mInterstitialAd = new InterstitialAd(this);
@@ -109,12 +109,9 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 // Code to be executed when when the interstitial ad is closed.
             }
         });
-
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
-        */
     }
 
     @Override
@@ -126,7 +123,6 @@ public class StickerPackListActivity extends AddStickerPackActivity {
 
 
     public void showAd(){
-/*
         if(mInterstitialAd != null){
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
@@ -135,8 +131,6 @@ public class StickerPackListActivity extends AddStickerPackActivity {
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
         }
-*/
-
     }
 
 
