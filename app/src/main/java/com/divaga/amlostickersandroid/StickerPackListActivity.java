@@ -10,6 +10,7 @@ package com.divaga.amlostickersandroid;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -117,8 +118,11 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
-        showAd();
+        int numero = (int) (Math.random() * 100) + 1;
+        if(numero >= 50){
+            Log.i("Prueba Random", "Numero: " + numero + "\nMostrar anuncio");
+            showAd();
+        }
     }
 
 

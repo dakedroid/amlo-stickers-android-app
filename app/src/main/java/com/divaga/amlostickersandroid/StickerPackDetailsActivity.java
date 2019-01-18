@@ -60,11 +60,14 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
     private InterstitialAd mInterstitialAd;
     private AdView mAdView;
 
+    private boolean mostrar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sticker_pack_details);
         boolean showUpButton = getIntent().getBooleanExtra(EXTRA_SHOW_UP_BUTTON, false);
+        mostrar = false;
         stickerPack = getIntent().getParcelableExtra(EXTRA_STICKER_PACK_DATA);
         TextView packNameTextView = findViewById(R.id.pack_name);
         TextView packPublisherTextView = findViewById(R.id.author);
@@ -102,6 +105,11 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        int numero = (int) (Math.random() * 100) + 1;
+        if(numero >= 45){
+            Log.i("Prueba Random", "Numero: " + numero + "\nMostrar anuncio");
+            mostrar = true;
+        }
     }
 
     private void launchInfoActivity(String publisherWebsite, String publisherEmail, String privacyPolicyWebsite, String trayIconUriString) {
@@ -157,7 +165,9 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
         public void onScrollStateChanged(@NonNull final RecyclerView recyclerView, final int newState) {
             super.onScrollStateChanged(recyclerView, newState);
             if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
+                if(mostrar){
+                    mInterstitialAd.show();
+                }
             } else {
                 Log.d("TAG", "The interstitial wasn't loaded yet.");
             }
